@@ -58,12 +58,6 @@ Incluímos algumas imagens de exemplo na pasta `imagens_teste` para você começ
 - `microorganismos.jpg`: Imagem de microscópio com células circulares
 - `bolhas.jpg`: Imagem com bolhas de diferentes tamanhos
 
-## Suporte
-
-Se encontrar algum problema ou tiver sugestões:
-1. Abra uma [issue](https://github.com/robertfabio/contador-microalgas/issues)
-2. Ou envie um e-mail para: [seu-email@exemplo.com]
-
 ## Contribuição
 
 Contribuições são bem-vindas! Por favor:
