@@ -1,0 +1,7 @@
+Relatório de Análise de Microalgas
+=================================
+
+Data da análise: 14/03/2025 19:47:05
+Total de microalgas: 181
+Tamanho médio: 23.9 pixels
+Densidade: 329.16 microalgas/pixel²
