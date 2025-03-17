@@ -1,68 +1,51 @@
-# Contador de Microalgas
+# AlgaView
 
-Um software para análise e contagem automática de microalgas em imagens microscópicas.
+Um aplicativo Flutter para análise e contagem de microalgas em imagens microscópicas.
 
-## Download e Instalação
+## Funcionalidades
 
-### Opção 1: Download Direto (Recomendado)
-1. Acesse a [página de releases](https://github.com/robertfabio/contador-microalgas/releases)
-2. Baixe o arquivo `ContadorMicroalgas.exe` mais recente
-3. Execute o programa clicando duas vezes no arquivo baixado
+- Seleção de imagens da galeria
+- Processamento automático de imagens
+- Detecção e contagem de microalgas
+- Análise de características morfológicas
+- Classificação por tipo de microalga
+- Armazenamento local de análises
+- Configurações ajustáveis de processamento
 
-### Opção 2: Instalação via Python (Para desenvolvedores)
-Se você deseja modificar o código ou contribuir com o projeto:
+## Requisitos
 
-1. Clone este repositório:
+- Flutter SDK >=3.0.0
+- Dart SDK >=3.0.0
+
+## Instalação
+
+1. Clone o repositório:
 ```bash
-git clone https://github.com/robertfabio/contador-microalgas.git
-cd contador-microalgas
+git clone https://github.com/seu-usuario/algaview.git
 ```
 
 2. Instale as dependências:
 ```bash
-pip install -r requirements.txt
+cd algaview
+flutter pub get
 ```
 
-3. Execute o programa:
+3. Execute o aplicativo:
 ```bash
-python microalgas/main.py
+flutter run
 ```
 
-## Como Usar
+## Configurações de Processamento
 
-1. Abra o programa
-2. Clique em "Carregar Imagem" e selecione uma foto de microscópio
-3. Ajuste os parâmetros de detecção usando os controles deslizantes:
-   - **Distância Mínima**: Distância entre microalgas (aumente se estiver detectando a mesma microalga várias vezes)
-   - **Sensibilidade**: Sensibilidade na detecção (aumente se estiver perdendo microalgas, diminua se estiver detectando ruído)
-   - **Acurácia**: Precisão na detecção (aumente para detecção mais precisa, diminua se estiver perdendo microalgas)
-   - **Raio Mínimo/Máximo**: Ajuste conforme o tamanho das suas microalgas
-4. Clique em "Contar Microalgas" para processar a imagem
-5. Os resultados serão exibidos na tela e podem ser exportados
+O aplicativo permite ajustar os seguintes parâmetros:
 
-## Resultados
+- Tamanho do kernel de desfoque (3-11)
+- Tamanho do bloco para threshold adaptativo (3-21)
+- Constante C para threshold (0-10)
+- Área mínima de detecção (50-500)
+- Área máxima de detecção (500-10000)
+- Circularidade mínima (0.0-1.0)
 
-O programa fornece:
-- Contagem total de microalgas
-- Tamanho médio das microalgas
-- Densidade de microalgas por área
-- Imagem processada com marcações
-- Relatório detalhado em CSV
+## Licença
 
-Os resultados são salvos automaticamente na pasta `resultados_analise`.
-
-## Exemplos
-
-Incluímos algumas imagens de exemplo na pasta `imagens_teste` para você começar:
-- `circulos_simples.png`: Imagem com círculos básicos para teste inicial
-- `microorganismos.jpg`: Imagem de microscópio com células circulares
-- `bolhas.jpg`: Imagem com bolhas de diferentes tamanhos
-
-## Contribuição
-
-Contribuições são bem-vindas! Por favor:
-1. Faça um Fork do projeto
-2. Crie uma branch para sua feature (`git checkout -b feature/NovaFuncionalidade`)
-3. Commit suas mudanças (`git commit -m 'Adiciona nova funcionalidade'`)
-4. Push para a branch (`git push origin feature/NovaFuncionalidade`)
-5. Abra um Pull Request 
+Este projeto está licenciado sob a Licença MIT - veja o arquivo [LICENSE](LICENSE) para detalhes.
